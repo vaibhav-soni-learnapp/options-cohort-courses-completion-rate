@@ -205,7 +205,7 @@ courses_list = st.multiselect(
 courses = {i: content_data[i]["id"] for i in content_data if i in courses_list}
 st.write("")
 
-user_data = pd.read_csv(LOTFS01_users.csv)
+user_data = pd.read_csv("LOTFS01_users.csv")
 
 # Code to get the list of users
 user_data = st.file_uploader(
