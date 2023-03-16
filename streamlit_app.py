@@ -199,7 +199,7 @@ content_data.update(
 courses = {}
 courses_list = st.multiselect(
     " Create a module by selecting any course/class/workshop/advanced course",
-    content_data.keys(),
+    content_data.keys(),['basics-of-options', 'banknifty-weekly-options-strategy', 'option-spreads-and-option-chain', 'intraday-banknifty-straddle-strategy', 'intraday-expiry-trading-strategy']
 )
 
 courses = {i: content_data[i]["id"] for i in content_data if i in courses_list}
