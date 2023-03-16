@@ -30,7 +30,7 @@ with col3:
 st.write("----")
 
 st.markdown(
-    "<h2 style='text-align: center; color: white;'>Module Completion Calculator</h2>",
+    "<h2 style='text-align: center; color: white;'>Options Module Courses Calculator</h2>",
     unsafe_allow_html=True,
 )
 st.write("----")
@@ -198,7 +198,7 @@ content_data.update(
 
 courses = {}
 courses_list = st.multiselect(
-    " Create a module by selecting any course/class/workshop/advanced course",
+    " Learn Options Trading From Scratch - Courses Tracker",
     content_data.keys(),['basics-of-options', 'banknifty-weekly-options-strategy', 'option-spreads-and-option-chain', 'intraday-banknifty-straddle-strategy', 'intraday-expiry-trading-strategy']
 )
 
@@ -206,6 +206,7 @@ courses = {i: content_data[i]["id"] for i in content_data if i in courses_list}
 st.write("")
 
 user_data = pd.read_csv("LOTFS01_users.csv")
+user_data = pd.read_csv(user_data)
 
 # Code to get the list of users
 user_data = st.file_uploader(
