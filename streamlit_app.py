@@ -209,9 +209,9 @@ user_data = pd.read_csv("LOTFS01_users.csv")
 user_data = pd.read_csv(user_data)
 
 # Code to get the list of users
-user_data = st.file_uploader(
-    "Upload a csv file with the Email ID of users in the cohort"
-)
+# #user_data = st.file_uploader(
+#     "Upload a csv file with the Email ID of users in the cohort"
+# )
 st.write("")
 
 if user_data is not None:
