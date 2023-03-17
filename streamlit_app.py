@@ -214,11 +214,6 @@ user_data = pd.read_csv("LOTFS01_users.csv")
 # )
 st.write("")
 
-if user_data is not None:
-
-    # Can be used wherever a "file-like" object is accepted:
-    user_data = pd.read_csv(user_data)
-
 # Code to get the module completion % of users
 if st.button("Find Completion %"):
     st.write("")
